@@ -1,5 +1,6 @@
-package com.example.home_6_android_3.hilt.data.remote.api
+package com.example.home_6_android_3.hilt.data.remote
 
+import com.example.home_6_android_3.hilt.data.remote.api.PhotoApiService
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

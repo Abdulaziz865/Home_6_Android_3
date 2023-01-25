@@ -10,7 +10,7 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.home_6_android_3.R
 import com.example.home_6_android_3.databinding.FragmentGetPhotoBinding
-import com.example.home_6_android_3.hilt.data.adapters.PhotoAdapter
+import com.example.home_6_android_3.hilt.ui.adapters.PhotoAdapter
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

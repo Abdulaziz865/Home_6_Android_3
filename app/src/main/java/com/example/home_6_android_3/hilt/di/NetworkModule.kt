@@ -1,7 +1,7 @@
 package com.example.home_6_android_3.hilt.di
 
 import com.example.home_6_android_3.hilt.data.remote.api.PhotoApiService
-import com.example.home_6_android_3.hilt.data.remote.api.RetrofitClient
+import com.example.home_6_android_3.hilt.data.remote.RetrofitClient
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

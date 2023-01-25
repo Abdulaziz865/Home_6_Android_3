@@ -25,17 +25,8 @@ class PhotoFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        setUpObserves()
         setUpRequests()
-    }
-
-    private fun setUpObserves() {
-        viewModel.photoLiveData.observe(viewLifecycleOwner) {
-            Toast.makeText(requireContext(), it.toString(), Toast.LENGTH_SHORT).show()
-        }
-        viewModel.errorLiveData.observe(viewLifecycleOwner) {
-            Toast.makeText(requireContext(), it, Toast.LENGTH_SHORT).show()
-        }
+        setUpObserves()
     }
 
     private fun setUpRequests() = binding?.let {
@@ -47,6 +38,15 @@ class PhotoFragment : Fragment() {
             viewModel.sendPhoto(
                 albumId = 101, id = id, title = title, url = url, thumbnailUrl = thumbnailUrl
             )
+        }
+    }
+
+    private fun setUpObserves() {
+        viewModel.photoLiveData.observe(viewLifecycleOwner) {
+            Toast.makeText(requireContext(), it.toString(), Toast.LENGTH_SHORT).show()
+        }
+        viewModel.errorLiveData.observe(viewLifecycleOwner) {
+            Toast.makeText(requireContext(), it, Toast.LENGTH_SHORT).show()
         }
     }
 

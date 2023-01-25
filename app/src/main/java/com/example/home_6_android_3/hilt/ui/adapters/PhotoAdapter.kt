@@ -1,4 +1,4 @@
-package com.example.home_6_android_3.hilt.data.adapters
+package com.example.home_6_android_3.hilt.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
